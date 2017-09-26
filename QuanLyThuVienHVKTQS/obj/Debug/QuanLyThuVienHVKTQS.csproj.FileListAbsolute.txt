@@ -1,0 +1,71 @@
+D:\Project\With visua studio\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\QuanLyThuVienHVKTQS.exe.config
+D:\Project\With visua studio\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\QuanLyThuVienHVKTQS.exe
+D:\Project\With visua studio\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\QuanLyThuVienHVKTQS.pdb
+D:\Project\With visua studio\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.csprojResolveAssemblyReference.cache
+D:\Project\With visua studio\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmDocGia.resources
+D:\Project\With visua studio\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmMain.resources
+D:\Project\With visua studio\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmMuonsach.resources
+D:\Project\With visua studio\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmNhanVien.resources
+D:\Project\With visua studio\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmSach.resources
+D:\Project\With visua studio\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.Properties.Resources.resources
+D:\Project\With visua studio\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.csproj.GenerateResource.Cache
+D:\Project\With visua studio\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.exe
+D:\Project\With visua studio\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.pdb
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\QuanLyThuVienHVKTQS.exe.config
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.exe
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.pdb
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\QuanLyThuVienHVKTQS.exe
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\QuanLyThuVienHVKTQS.pdb
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.csprojResolveAssemblyReference.cache
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmDocGia.resources
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmMain.resources
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmMuonsach.resources
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmNhanVien.resources
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmSach.resources
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.Properties.Resources.resources
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.csproj.GenerateResource.Cache
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\EntityFramework.dll
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\EntityFramework.SqlServer.dll
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\EntityFramework.xml
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\EntityFramework.SqlServer.xml
+F:\nam 4 ky1\TT nhom\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmNhaXuatBan.resources
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\QuanLyThuVienHVKTQS.exe.config
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\QuanLyThuVienHVKTQS.exe
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\QuanLyThuVienHVKTQS.pdb
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\EntityFramework.dll
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\EntityFramework.xml
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.csprojResolveAssemblyReference.cache
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmDocGia.resources
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmMain.resources
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmMuonsach.resources
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmNhanVien.resources
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmNhaXuatBan.resources
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmSach.resources
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.Properties.Resources.resources
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.csproj.GenerateResource.Cache
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.exe
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.pdb
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmDangNhap.resources
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmLichSuMuonTra.resources
+C:\Users\phamh\Desktop\nam 4\QuanLyThuVienHVKTQS\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.csproj.CoreCompileInputs.cache
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\bin\Debug\QuanLyThuVienHVKTQS.exe.config
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\bin\Debug\QuanLyThuVienHVKTQS.exe
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\bin\Debug\QuanLyThuVienHVKTQS.pdb
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\bin\Debug\EntityFramework.xml
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.csprojResolveAssemblyReference.cache
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmDangNhap.resources
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmDocGia.resources
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmLichSuMuonTra.resources
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmMain.resources
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmMuonsach.resources
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmNhanVien.resources
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmNhaXuatBan.resources
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.frmSach.resources
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.Properties.Resources.resources
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.csproj.GenerateResource.Cache
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.csproj.CoreCompileInputs.cache
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.exe
+C:\Users\phamh\Desktop\nam 4\New folder\QuanLyThuVienHVKTQS\obj\Debug\QuanLyThuVienHVKTQS.pdb
