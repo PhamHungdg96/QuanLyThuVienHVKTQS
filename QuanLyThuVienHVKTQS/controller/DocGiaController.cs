@@ -14,6 +14,10 @@ namespace QuanLyThuVienHVKTQS.controller
         {
             db = new QuanLiThuVienHVKTQS();
         }
-        
+        public List<docgia> Detail()
+        {
+            return db.docgias.ToList();
+        }
+
     }
 }
