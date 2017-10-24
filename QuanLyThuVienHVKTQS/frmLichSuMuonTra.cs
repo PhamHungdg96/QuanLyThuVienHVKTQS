@@ -137,7 +137,7 @@ namespace QuanLyThuVienHVKTQS
 
         private void cbbSach_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            listcbb = list;
         }
     }
 }
