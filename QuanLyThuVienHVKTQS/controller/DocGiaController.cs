@@ -18,6 +18,20 @@ namespace QuanLyThuVienHVKTQS.controller
         {
             return db.docgias.ToList();
         }
+        public long Add(docgia entity)
+        {
+            try
+            {
+                db.docgias.Add(entity);
+                db.SaveChanges();
+            }
+            catch (Exception)
+            {
+                return 0;
+                throw;
+            }
+            return entity.sothe;
+        }
 
     }
 }
