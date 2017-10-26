@@ -14,14 +14,25 @@ namespace QuanLyThuVienHVKTQS
 {
     public partial class frmNhaXuatBan : Form
     {
-       
+        List<nhaxuatban> l = null;
+        private bool Them_bool = false;
+        private bool Sua_bool = true;
         public frmNhaXuatBan()
         {
             InitializeComponent();
-            
+            HienThi_NXB();
+        }
+        private void btn_enable(bool t)
+        {
+            group_NXB.Enabled = t;
+            Them_NXB.Enabled = !t;
+            Sua_NXB.Enabled = !t;
+            Xoa_NXB.Enabled = !t;
+            Luu_NXB.Enabled = t;
+            Boqua_NXB.Enabled = t;
+            Them_bool = Sua_bool = false;
         }
 
-       
         public void ListView_NXB_SelectedIndexChanged(object sender,EventArgs e)
         {
             
