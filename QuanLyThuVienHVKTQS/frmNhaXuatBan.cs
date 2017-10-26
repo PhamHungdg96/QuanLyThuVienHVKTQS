@@ -67,17 +67,34 @@ namespace QuanLyThuVienHVKTQS
         }
         private void Them_NXB_Click(object sender, EventArgs e)
         {
-           
+            manxbtxt.Text = "";
+            tennxbtxt.Text = "";
+            diachinxbtxt.Text = "";
+            sdtnxbtxt.Text = "";
+            btn_enable(true);
+            Them_bool = true;
         }
 
         private void Sua_NXB_Click(object sender, EventArgs e)
         {
-           
+            btn_enable(true);
+            Sua_bool = true;
         }
 
         private void Xoa_NXB_Click(object sender, EventArgs e)
         {
-            
+            DialogResult result = MessageBox.Show("Bạn có muốn xóa?", "delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.Yes)
+            {
+                int id = Convert.ToInt32(manxbtxt.Text);
+                var entity = new NhaXuatBanController();
+                if (entity.Delete(id))
+                    HienThi_NXB();
+                else
+                {
+                    MessageBox.Show("Không xóa được");
+                }
+            }
         }
 
         private void Luu_NXB_Click(object sender, EventArgs e)
