@@ -14,11 +14,12 @@ namespace QuanLyThuVienHVKTQS
 {
     public partial class frmLichSuMuonTra : Form
     {
-        
+        List<muonsach> list = null;
+        List<muonsach> listcbb = null;
         public frmLichSuMuonTra()
         {
             InitializeComponent();
-            
+            ShowView();
         }
         
        
