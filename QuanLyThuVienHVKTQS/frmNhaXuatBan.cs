@@ -99,12 +99,39 @@ namespace QuanLyThuVienHVKTQS
 
         private void Luu_NXB_Click(object sender, EventArgs e)
         {
-           
+            if (Them_bool == true && Sua_bool == false)
+            {
+                var nxb = new nhaxuatban();
+                nxb.tennxb = tennxbtxt.Text;
+                nxb.diachi = diachinxbtxt.Text;
+                nxb.sdt = sdtnxbtxt.Text;
+
+                var entity = new NhaXuatBanController();
+                if (entity.Add(nxb) > 0)
+                    HienThi_NXB();
+                else
+                    MessageBox.Show("Thêm không thành công");
+            }
+            if (Them_bool == false && Sua_bool == true)
+            {
+                var nxb = new nhaxuatban();
+                nxb.tennxb = tennxbtxt.Text;
+                nxb.diachi = diachinxbtxt.Text;
+                nxb.sdt = sdtnxbtxt.Text;
+
+                var entity = new NhaXuatBanController();
+                if (entity.Edit(nxb))
+                    HienThi_NXB();
+                else
+                    MessageBox.Show("Sửa không thành công");
+
+            }
+            btn_enable(false);
         }
 
         private void Boqua_NXB_Click(object sender, EventArgs e)
         {
-            
+            btn_enable(true);
         }
 
         private void Thoat_NXB_Click(object sender, EventArgs e)
