@@ -73,17 +73,48 @@ namespace QuanLyThuVienHVKTQS
             btn_edit(false);
         }
 
-        
+
 
         private void lvSach_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if (lvSach.SelectedItems.Count == 0)
+                return;
+            int i = Convert.ToInt32(lvSach.SelectedItems[0].SubItems[1].Text);
+            int index = l.FindIndex(m => m.masach == i);
+            txtMaSach.Text = l[index].masach.ToString();
+            txtTenSach.Text = l[index].tensach.ToString();
+            txtTacGia.Text = l[index].tentacgia.ToString();
+            if (l[index].manxb != null)
+                cbbNXB.Text = l[index].nhaxuatban.tennxb.ToString();
+            else
+                cbbNXB.Text = "";
+            txtNamXB.Text = l[index].namxb.ToString();
+
+            txtLanXB.Text = l[index].solanxb.ToString();
+            txtGiaTien.Text = l[index].giatien.ToString();
+            txtSoLuong.Text = l[index].soluong.ToString();
+            txtNgonNgu.Text = l[index].ngonngu.ToString();
+            txtTheLoai.Text = l[index].theloai.ToString();
+            txtLoaiSach.Text = l[index].loai.ToString();
         }
 
         private void btnThemSach_Click(object sender, EventArgs e)
         {
 
-            
+            btn_edit(true);
+            txtMaSach.Text = "";
+            txtTenSach.Text = "";
+            txtTacGia.Text = "";
+            //txtNXB.Text = "";
+            txtNamXB.Text = "";
+
+            txtLanXB.Text = "";
+            txtGiaTien.Text = "";
+            txtSoLuong.Text = "";
+            txtNgonNgu.Text = "";
+            txtTheLoai.Text = "";
+            txtLoaiSach.Text = "";
+            this.Them_bool = true;
         }
         
         private void btnThoat_Click(object sender, EventArgs e)
