@@ -51,9 +51,19 @@ namespace QuanLyThuVienHVKTQS
             }
             btn_enable(false);
         }
-        public void ListView_NXB_SelectedIndexChanged(object sender,EventArgs e)
+        public void ListView_NXB_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if (listView_NXB.SelectedItems.Count == 0) return;
+            int id = Convert.ToInt32(listView_NXB.SelectedItems[0].SubItems[1].Text);
+            int index = l.FindIndex(m => m.manxb == id);
+
+            manxbtxt.Text = l[index].manxb.ToString();
+            tennxbtxt.Text = l[index].tennxb.ToString();
+            if (l[index].diachi == null) diachinxbtxt.Text = "";
+            else diachinxbtxt.Text = l[index].diachi.ToString();
+            if (l[index].sdt == null) sdtnxbtxt.Text = "";
+            else sdtnxbtxt.Text = l[index].sdt.ToString();
+
         }
         private void Them_NXB_Click(object sender, EventArgs e)
         {
