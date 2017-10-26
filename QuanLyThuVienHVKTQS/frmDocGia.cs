@@ -130,12 +130,60 @@ namespace QuanLyThuVienHVKTQS
 
         private void Xoa_DG_Click(object sender, EventArgs e)
         {
-
+            DialogResult result = MessageBox.Show("Bạn có muốn xóa độc giả này?", "delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.Yes)
+            {
+                long id = Convert.ToInt64(sothetxt.Text);
+                var entity = new DocGiaController();
+                if (entity.delete(id))
+                    HienThi_DG();
+                else
+                    MessageBox.Show("Xóa độc giả lỗi");
+            }
         }
 
         private void Luu_DG_Click(object sender, EventArgs e)
         {
-            
+            if (Them_bool == true && Sua_bool == false)
+            {
+                var entity = new docgia();
+
+                //entity.sothe = Convert.ToInt64(sothetxt.Text);
+                entity.hoten = tendgtxt.Text;
+                entity.ngaysinh = ngaysinhdg.Value;
+                entity.gioitinh = gioitinhdgtxt.Text;
+                entity.diachi = diachidgtxt.Text;
+                entity.email = emaildgtxt.Text;
+                entity.socmtnd = socmtnddgtxt.Text;
+                entity.ngaylamthe = ngaythedg.Value;
+                entity.handungthe = hanthedg.Value;
+
+                var dg = new DocGiaController();
+                if (dg.Add(entity) > 0)
+                    HienThi_DG();
+                else
+                    MessageBox.Show("Thêm độc giả không thành công");
+            }
+            if (Them_bool == false && Sua_bool == true)
+            {
+                var entity = new docgia();
+                entity.sothe = Convert.ToInt32(sothetxt.Text);
+                entity.hoten = tendgtxt.Text;
+                entity.ngaysinh = ngaysinhdg.Value;
+                entity.gioitinh = gioitinhdgtxt.Text;
+                entity.diachi = diachidgtxt.Text;
+                entity.email = emaildgtxt.Text;
+                entity.socmtnd = socmtnddgtxt.Text;
+                entity.ngaylamthe = ngaythedg.Value;
+                entity.handungthe = hanthedg.Value;
+
+                var dg = new DocGiaController();
+                if (dg.Edit(entity))
+                    HienThi_DG();
+                else
+                    MessageBox.Show("Sửa độc giả không thành công");
+            }
+            btn_enable(false);
         }
 
         private void Boqua_DG_Click(object sender, EventArgs e)
