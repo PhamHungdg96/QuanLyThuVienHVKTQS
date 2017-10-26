@@ -32,7 +32,25 @@ namespace QuanLyThuVienHVKTQS
             Boqua_NXB.Enabled = t;
             Them_bool = Sua_bool = false;
         }
+        public void HienThi_NXB()
+        {
+            var nxb = new NhaXuatBanController();
+            l = nxb.Detail();
+            listView_NXB.Items.Clear();
+            int i = 1;
 
+            foreach (nhaxuatban row in l)
+            {
+                ListViewItem item = new ListViewItem();
+                item.Text = "" + i++;
+                item.SubItems.Add(row.manxb.ToString());
+                item.SubItems.Add(row.tennxb);
+                item.SubItems.Add(row.diachi);
+                item.SubItems.Add(row.sdt);
+                listView_NXB.Items.Add(item);
+            }
+            btn_enable(false);
+        }
         public void ListView_NXB_SelectedIndexChanged(object sender,EventArgs e)
         {
             
