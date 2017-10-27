@@ -127,17 +127,17 @@ namespace QuanLyThuVienHVKTQS
 
         private void cbbNhanVien_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            listcbb = list;
         }
 
         private void cbbDocGia_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            listcbb = list;
         }
 
         private void cbbSach_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            listcbb = list;
         }
     }
 }
