@@ -14,7 +14,10 @@ namespace QuanLyThuVienHVKTQS.controller
         {
             db = new QuanLiThuVienHVKTQS();
         }
-        
+        public List<nhaxuatban> Detail()
+        {
+            return db.nhaxuatbans.ToList();
+        }
 
     }
 }
