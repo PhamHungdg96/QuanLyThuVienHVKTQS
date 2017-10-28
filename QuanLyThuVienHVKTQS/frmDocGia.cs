@@ -188,12 +188,12 @@ namespace QuanLyThuVienHVKTQS
 
         private void Boqua_DG_Click(object sender, EventArgs e)
         {
-            
+            btn_enable(false);
         }
 
         private void Thoat_DG_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
     }
 }
