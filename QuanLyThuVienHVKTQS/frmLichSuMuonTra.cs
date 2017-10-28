@@ -85,13 +85,44 @@ namespace QuanLyThuVienHVKTQS
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if (comboBox1.SelectedIndex == 0)
+            {
+                MuonTraSachController mtsc = new MuonTraSachController();
+                list = null;
+                list = mtsc.DSLS();
+
+            }
+            else if (comboBox1.SelectedIndex == 1)
+            {
+                MuonTraSachController mtsc = new MuonTraSachController();
+                list = null;
+                list = mtsc.DSLSMuon();
+            }
+            else
+            {
+                MuonTraSachController mtsc = new MuonTraSachController();
+                list = null;
+                list = mtsc.DSLSTra();
+            }
+            LoadListView(list);
         }
 
         private void btnLoc_Click(object sender, EventArgs e)
         {
-            
-            
+
+            if (cbbNhanVien.SelectedValue.ToString().Length > 0)
+            {
+                listcbb = listcbb.Where(m => m.tennv == cbbNhanVien.SelectedValue.ToString()).ToList();
+            }
+            if (Convert.ToInt64(cbbDocGia.SelectedValue.ToString()) > 0)
+            {
+                listcbb = listcbb.Where(m => m.sothe == Convert.ToInt64(cbbDocGia.SelectedValue.ToString())).ToList();
+            }
+            if (Convert.ToInt64(cbbSach.SelectedValue.ToString()) > 0)
+            {
+                listcbb = listcbb.Where(m => m.masach == Convert.ToInt32(cbbSach.SelectedValue.ToString())).ToList();
+            }
+            LoadListView(listcbb);
         }
 
         private void cbbNhanVien_SelectedIndexChanged(object sender, EventArgs e)
