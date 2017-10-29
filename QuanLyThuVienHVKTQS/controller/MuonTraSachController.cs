@@ -34,55 +34,6 @@ namespace QuanLyThuVienHVKTQS.controller
             var result = db.muonsaches.ToList();
             return result;
         }
-        public int MuonSach(muonsach entity)
-        {
-            try
-            {
-                var index = db.muonsaches.Find(entity.id);
-                var sl = db.muonsaches.Where(m => m.masach == entity.masach && m.ngaytra == null).Count();
-                if (sl < db.saches.Find(entity.masach).soluong)
-                {
-                    if (index != null)
-                    {
-                        index.masach = entity.masach;
-                        index.tennv = entity.tennv;
-                        index.sothe = entity.sothe;
-                        index.ngaymuon = entity.ngaymuon;
-                        index.hantra = entity.hantra;
-                    }
-                    else
-                    {
-                        db.muonsaches.Add(entity);
-                    }
-                    db.SaveChanges();
-                }
-                else
-                {
-                    return 0;
-                }
-
-            }
-            catch (Exception)
-            {
-                return -1;
-                throw;
-            }
-            return 1;
-        }
-        public bool TraSach(long id)
-        {
-            try
-            {
-                var entity = db.muonsaches.Find(id);
-                entity.ngaytra = DateTime.Now;
-                db.SaveChanges();
-            }
-            catch (Exception)
-            {
-                return false;
-                throw;
-            }
-            return true;
-        }
+        
     }
 }
