@@ -164,23 +164,63 @@ namespace QuanLyThuVienHVKTQS
 
         private void btnMuonThem_Click(object sender, EventArgs e)
         {
-            
+            cbbTenSach.Enabled = true;
+            dtpHanTra.Enabled = true;
+            btnsua.Enabled = true;
+            active(true);
+
+           
+            txtNVDaChoMuon.Text = txtNVChoMuon.Text;
+            muon_sach = true;
+            tra_sach = false;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-
+        	if (muon_sach == true && tra_sach == false)
+            {
+                MuonTraSachController mtsc = new MuonTraSachController();
+                muonsach m = new muonsach();
+                m.sothe = Convert.ToInt32(cbbDocGia.SelectedValue.ToString());
+                m.masach = Convert.ToInt32(cbbTenSach.SelectedValue.ToString());
+                m.tennv = ConstantCommon.TEN_DANG_NHAP;
+                m.ngaymuon = DateTime.Now;
+                m.hantra = Convert.ToDateTime(dtpHanTra.Text);
+                var bol = mtsc.MuonSach(m);
+                if (bol<0)
+                {
+                    MessageBox.Show("khong them duoc");
+                }
+                else if(bol==0)
+                {
+                    MessageBox.Show("khong con sach de cho muon");
+                }
+            }
+            if (muon_sach == false && tra_sach == true)
+            {
+                if (id_select != 0)
+                {
+                    MuonTraSachController mtsc = new MuonTraSachController();
+                    mtsc.TraSach(id_select);
+                }
+            }
+            DSMuonView();
             
         }
 
         private void btnBoQua_Click(object sender, EventArgs e)
         {
-            
+            active(false);
+            muon_sach = false;
+            tra_sach = false;
         }
 
         private void btnTra_Click(object sender, EventArgs e)
         {
-            
+            active(true);
+            btnsua.Enabled = false;
+            muon_sach = false;
+            tra_sach = true;
         }
 
         private void btnsua_Click(object sender, EventArgs e)
