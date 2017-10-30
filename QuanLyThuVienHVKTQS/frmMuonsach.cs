@@ -130,19 +130,36 @@ namespace QuanLyThuVienHVKTQS
 
         private void listviewDSMuon_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (listviewDSMuon.SelectedItems.Count == 0) return;
+            long id = Convert.ToInt64(listviewDSMuon.SelectedItems[0].SubItems[1].Text);
+            int index = listms.FindIndex(m => m.id == id);
+            id_select = listms[index].id;
+            txtMaSach.Text = listms[index].masach.ToString();
+            cbbTenSach.Text = listms[index].sach.tensach.ToString();
+            txtTacGia.Text = listms[index].sach.tentacgia.ToString();
+            if (listms[index].sach.manxb != null)
+                txtNXB.Text = listms[index].sach.nhaxuatban.tennxb.ToString();
+            else
+                txtNXB.Text = "";
+            txtNamXB.Text = listms[index].sach.namxb.ToString();
+            txtGiaDen.Text = listms[index].sach.giatien.ToString();
             
+            txtTheLoai.Text = listms[index].sach.theloai.ToString();
+            txtLoaiSach.Text = listms[index].sach.loai.ToString();
+            dtpHanTra.Text = listms[index].hantra.ToString();
+            txtNVDaChoMuon.Text = listms[index].nhanvien.tennv.ToString();
             
         }
 
         private void cbbDocGia_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+           DSMuonView();
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
 
         private void btnMuonThem_Click(object sender, EventArgs e)
