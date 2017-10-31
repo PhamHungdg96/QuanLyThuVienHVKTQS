@@ -52,28 +52,53 @@ namespace QuanLyThuVienHVKTQS
         }
         private void tsmiDangXuat_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
+            ConstantCommon.TEN_DANG_NHAP = "";
+            ConstantCommon.LOAI_TAI_KHOAN = 0;
+            ConstantCommon.HO_TEN_NV = "";
+            frmDangNhap frm = new frmDangNhap();
+            this.Hide();
+            frm.ShowDialog();
             
         }
 
         private void tsmiThoat_Click(object sender, EventArgs e)
         {
-            
+            Application.Exit();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            
+            Application.Exit();
         }
 
         private void btnSuaThongTin_Click(object sender, EventArgs e)
         {
-            
+            groupedit_NV.Enabled = true;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            
+            var entity = new nhanvien();
+            entity.tendangnhap = txtTenDangNhap.Text;
+            entity.matkhau = txtMatKhau.Text;
+            entity.tennv = tennvtxt.Text;
+            entity.ngaysinh = ngaysinhnv.Value;
+            entity.gioitinh = cbbGioiTinh.Text;
+            entity.sdt = sdttxt.Text;
+            entity.diachi = diachitxt.Text;
+            entity.socmtnd = socmtndtxt.Text;
+
+            var nv = new NhanVienController();
+            if (nv.EditOne(entity))
+            {
+                MessageBox.Show("ok");
+                showOne();
+            }
+                
+            else
+                MessageBox.Show("Thêm nhân viên lỗi!");
+            groupedit_NV.Enabled = false;
         }
 
         private void btnBoQua_Click(object sender, EventArgs e)
