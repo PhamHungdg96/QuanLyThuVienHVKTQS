@@ -108,27 +108,33 @@ namespace QuanLyThuVienHVKTQS
 
         private void tsmiMuonSach_Click(object sender, EventArgs e)
         {
+            frmMuonsach frm = new frmMuonsach();
             
+            frm.ShowDialog();
         }
 
         private void tsmiNhanVien_Click(object sender, EventArgs e)
         {
-            
+            frmNhanVien frm = new frmNhanVien();
+            frm.ShowDialog();
         }
 
         private void tsmiDanhMucDocGia_Click(object sender, EventArgs e)
         {
-            
+            frmDocGia frm = new frmDocGia();
+            frm.ShowDialog();
         }
 
         private void tsmiDanhMucNXB_Click(object sender, EventArgs e)
         {
-            
+            frmNhaXuatBan frm = new frmNhaXuatBan();
+            frm.ShowDialog();
         }
 
         private void tsmiDanhMucSach_Click(object sender, EventArgs e)
         {
-           
+           frmSach frm = new frmSach();
+            frm.ShowDialog();
         }
 
         private void tsmiTimKiemDocGia_Click(object sender, EventArgs e)
@@ -148,7 +154,8 @@ namespace QuanLyThuVienHVKTQS
 
         private void tsmiTKDocGia_Click(object sender, EventArgs e)
         {
-            
+            frmLichSuMuonTra frm = new frmLichSuMuonTra();
+            frm.ShowDialog();
         }
 
         private void anhmoinvbtn_Click(object sender, EventArgs e)
