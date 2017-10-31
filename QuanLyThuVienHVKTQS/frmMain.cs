@@ -18,9 +18,38 @@ namespace QuanLyThuVienHVKTQS
         public frmMain()
         {
             InitializeComponent();
+            if (ConstantCommon.LOAI_TAI_KHOAN == 2)
+            {
+                tsmiNhanVien.Enabled = true;
+                ThongKetsmi.Visible = true;
+            }
+            showOne();
             
         }
-       
+       	void showOne()
+        {
+            var nvc = new NhanVienController();
+            var nv = nvc.DetailOne(ConstantCommon.TEN_DANG_NHAP);
+            ConstantCommon.HO_TEN_NV = nv.tennv.ToString();
+            txtTenDangNhap.Text = nv.tendangnhap;
+            tennvtxt.Text = nv.tennv.ToString();
+            ngaysinhnv.Text = nv.ngaysinh.ToString();
+            if (nv.gioitinh == null) cbbGioiTinh.Text = "";
+            else cbbGioiTinh.Text = nv.gioitinh.ToString();
+            if (nv.sdt == null) sdttxt.Text = "";
+            else sdttxt.Text = nv.sdt.ToString();
+            if (nv.diachi == null) diachitxt.Text = "";
+            else diachitxt.Text = nv.diachi.ToString();
+            if (nv.socmtnd == null) socmtndtxt.Text = "";
+            else socmtndtxt.Text = nv.socmtnd.ToString();
+            if (nv.anh != null)
+            {
+                string path = Path.Combine(Environment.CurrentDirectory, @"Pictures\", nv.anh.ToString());
+                Image image = Image.FromFile(path);
+                this.anhnv_picture.Image = image;
+                anhnv_picture.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+        }
         private void tsmiDangXuat_Click(object sender, EventArgs e)
         {
             
