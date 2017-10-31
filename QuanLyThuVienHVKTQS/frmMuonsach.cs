@@ -225,11 +225,32 @@ namespace QuanLyThuVienHVKTQS
 
         private void btnsua_Click(object sender, EventArgs e)
         {
-            
+            if (muon_sach == true && tra_sach == false)
+            {
+                MuonTraSachController mtsc = new MuonTraSachController();
+                muonsach m = new muonsach();
+                m.id = id_select;
+                m.sothe = Convert.ToInt32(cbbDocGia.SelectedValue.ToString());
+                m.masach = Convert.ToInt32(cbbTenSach.SelectedValue.ToString());
+                m.tennv = ConstantCommon.TEN_DANG_NHAP;
+                m.ngaymuon = DateTime.Now;
+                m.hantra = Convert.ToDateTime(dtpHanTra.Text);
+
+                if (mtsc.MuonSach(m)<0)
+                {
+                    MessageBox.Show("khong them duoc");
+                }
+
+            }
+            DSMuonView();
         }
 
         private void dtpHanTra_ValueChanged(object sender, EventArgs e)
         {
+        	if (DateTime.Compare(dtpHanTra.Value, DateTime.Now) < 0)
+            {
+                MessageBox.Show("han tra phai sau ngay muon");
+            }
         }
     }
 }
