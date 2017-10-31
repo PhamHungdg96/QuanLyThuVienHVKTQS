@@ -160,8 +160,34 @@ namespace QuanLyThuVienHVKTQS
 
         private void anhmoinvbtn_Click(object sender, EventArgs e)
         {
+            string filepath = null;
+            OpenFileDialog ofdImages = new OpenFileDialog();
+            
+            if (ofdImages.ShowDialog() == DialogResult.OK)
+            {
+                filepath = ofdImages.FileName;
+                string[] last = filepath.Split('.');
+                string destinationPath = System.IO.Path.Combine(Environment.CurrentDirectory, @"Pictures\");
+                string destinationFileName = DateTime.Now.ToString("yyyyMMddhhmmss") +"."+ last[last.Length-1]; 
+                string sourceFile = ofdImages.FileName;
+                string destinationFile = System.IO.Path.Combine(destinationPath, destinationFileName);
+
+                if (!System.IO.Directory.Exists(destinationPath))
+                {
+                    System.IO.Directory.CreateDirectory(destinationPath);
+                }
+                System.IO.File.Copy(sourceFile, destinationFile, true);
+                NhanVienController nvc = new NhanVienController();
+                nvc.EditOne(destinationFileName, ConstantCommon.TEN_DANG_NHAP);
+                anhnv_picture.Image = Image.FromFile(destinationFile);
+                anhnv_picture.SizeMode = PictureBoxSizeMode.CenterImage;
+            }
             
             
+        }
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
